@@ -30,7 +30,6 @@ def validate_card(customer: Customer) -> bool:
     )
     return customer.cc_valid
 
-
 def main() -> None:
     alice = Customer(
         name="Alice",
@@ -42,7 +41,6 @@ def main() -> None:
     is_valid = validate_card(alice)
     print(f"Is Alice's card valid? {is_valid}")
     print(alice)
-
 
 if __name__ == "__main__":
     main()
