@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
 
-
 def luhn_checksum(card_number: str) -> bool:
     def digits_of(number: str) -> list[int]:
         return [int(d) for d in number]
