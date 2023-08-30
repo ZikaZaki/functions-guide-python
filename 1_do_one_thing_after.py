@@ -14,7 +14,6 @@ def luhn_checksum(card_number: str) -> bool:
         checksum += sum(digits_of(str(digit * 2)))
     return checksum % 10 == 0
 
-
 @dataclass
 class Customer:
     name: str
@@ -23,7 +22,6 @@ class Customer:
     cc_exp_month: int
     cc_exp_year: int
     cc_valid: bool = False
-
 
 def validate_card(customer: Customer) -> bool:
     customer.cc_valid = (
