@@ -5,4 +5,3 @@ matches = [(f"{team1} vs {team2}") for team1 in teams for team2 in teams[teams.i
 
 for match in matches:
     print(match)
-
