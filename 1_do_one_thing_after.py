@@ -13,6 +13,7 @@ def luhn_checksum(card_number: str) -> bool:
     
     for digit in even_digits:
         checksum += sum(digits_of(str(digit * 2)))
+        
     return checksum % 10 == 0
 
 @dataclass
