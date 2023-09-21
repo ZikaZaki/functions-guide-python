@@ -28,6 +28,7 @@ def validate_card(customer: Customer) -> bool:
         luhn_checksum(customer.cc_number)
         and datetime(customer.cc_exp_year, customer.cc_exp_month, 1) > datetime.now()
     )
+    
     return customer.cc_valid
 
 def main() -> None:
