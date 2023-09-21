@@ -38,6 +38,7 @@ def main() -> None:
         cc_exp_month=1,
         cc_exp_year=2024,
     )
+    
     is_valid = validate_card(alice)
     print(f"Is Alice's card valid? {is_valid}")
     print(alice)
