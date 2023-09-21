@@ -10,6 +10,7 @@ def luhn_checksum(card_number: str) -> bool:
     even_digits = digits[-2::-2]
     checksum = 0
     checksum += sum(odd_digits)
+    
     for digit in even_digits:
         checksum += sum(digits_of(str(digit * 2)))
     return checksum % 10 == 0
